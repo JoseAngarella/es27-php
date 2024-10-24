@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="gestione.php" method="post">
+        <label for="nome">Nome oggetto;</label>
+        <input type="text" name="nome">
+        <br>
+        <label for="prezzo">Prezzo:</label>
+        <input type="number" name="prezzo">
+        <br>
+        <label for="quantita">Quantita:</label>
+        <select name="quantita">
+            <option value="q1">1</option>
+            <option value="q2">2</option>
+            <option value="q3">3</option>
+            <option value="q4">4</option>
+            <option value="q5">5</option>
+            <option value="q6">6</option>
+            <option value="q7">7</option>
+            <option value="q8">8</option>
+            <option value="q9">9</option>
+            <option value="q10">10</option>
+        </select>
+        <br>
+        <label for="stato">Usato (seleziona se usato):</label>
+        <input type="checkbox" name="stato" value="usato">
+        <br>
+        <label for="stato">Modalita di pagamento:</label>
+        <input type="radio" name="modalita_pagamento" value="contanti"><span>contanti</span>
+        <input type="radio" name="modalita_pagamento" value="carta"><span>carta</span>
+        <input type="radio" name="modalita_pagamento" value="buono_digitale"><span>buono digitale</span>
+        <br>
+        <input type="submit" value="invia">
+
+
+
+
+    </form>
+</body>
+
+</html>
+
+<!-- Creare una pagina acqusti.html che permette di acquistare un oggetto.
+La pagina deve contenere una form con i seguenti campi:
+- nome dell'oggetto (input type text)
+- costo (input type text)
+- quantità (menù a tendina tramite select)
+- stato dell'oggetto usato / non usato (una singola casella tramite input type checkbox)
+- metodo di pagamento contanti oppure carta oppure buono digitale (input type radio). -->
