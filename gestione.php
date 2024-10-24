@@ -14,27 +14,20 @@
         $quantita=$_POST['quantita'];
         if(isset($_POST['stato'])){
             $stato='Oggetto usato';
-            $prezzo=($prezzo/100)*80;
+            $prezzo*=0.8;
 
         }else{
             $stato='Oggetto nuovo';
         }
-        if(isset($_POST['modalita_pagamento'])){
-            $modalita_pagamento=$_POST['modalita_pagamento'];
-            if(empty($nome) || empty ($prezzo)){
-                echo "<a href='acquisti.html'>dati mancanti torna alla compilazione del form</a>";
-            }else{
-                if($modalita_pagamento=='carta'){
-                    $prezzo+=2;
-                }
-                echo "<ul><li>Nome oggetto = $nome</li><li>Prezzo = $prezzo</li><li>Quantita = $quantita</li>
-                <li>stato dell'oggetto: $stato</li><li>Modalita pagamento: $modalita_pagamento</li>
-                </ul>";
-
-            }
-        }else{
-            echo "<a href='acquisti.html'>dati mancanti torna alla compilazione del form</a>";
+        $modalita_pagamento=$_POST['modalita_pagamento'];
+        if($modalita_pagamento=='carta'){
+            $prezzo+=2;
         }
+        echo "<ul><li>Nome oggetto = $nome</li><li>Prezzo = $prezzo</li><li>Quantita = $quantita</li>
+        <li>stato dell'oggetto: $stato</li><li>Modalita pagamento: $modalita_pagamento</li>
+        </ul>";
+
+        
     ?>
 </body>
 </html>

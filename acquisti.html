@@ -11,10 +11,10 @@
 
     <form action="gestione.php" method="post">
         <label for="nome">Nome oggetto;</label>
-        <input type="text" name="nome">
+        <input type="text" name="nome" required>
         <br>
         <label for="prezzo">Prezzo:</label>
-        <input type="number" name="prezzo">
+        <input type="number" name="prezzo" required>
         <br>
         <label for="quantita">Quantita:</label>
         <select name="quantita">
@@ -34,7 +34,7 @@
         <input type="checkbox" name="stato" value="usato">
         <br>
         <label for="stato">Modalita di pagamento:</label>
-        <input type="radio" name="modalita_pagamento" value="contanti"><span>contanti</span>
+        <input type="radio" name="modalita_pagamento" value="contanti" checked><span>contanti</span>
         <input type="radio" name="modalita_pagamento" value="carta"><span>carta</span>
         <input type="radio" name="modalita_pagamento" value="buono_digitale"><span>buono digitale</span>
         <br>
